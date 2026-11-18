@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    // Окружение: Node.js
+    "module": "nodenext",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    // Только проверка типов, без создания .js файлов (запускаем через tsx)
+    "noEmit": true,
+
+    // Строгие проверки
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Ловят твои типичные ошибки
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+
+    // Рекомендуемые
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  }
+}
